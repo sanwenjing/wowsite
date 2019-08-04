@@ -1,5 +1,4 @@
 <?php
-
 require_once("config.php");
 require_once("PDOMysql.class.php");
 session_start();
@@ -49,13 +48,14 @@ if(!empty($_POST["accountname"]) && !empty($_POST["password"]) && !empty($_POST[
     if(count($errors)==1){
     	$args=array(
     			"username"=>$post_accountname,
-    			"sha_pass_hash"=>SHA1(strtoupper("'$post_accountname'").":".strtoupper("'$post_password'")),
+    			//SHA1(CONCAT(UPPER('$post_accountname'),':',UPPER('$post_password')))
+    			"sha_pass_hash"=>SHA1(strtoupper($post_accountname.":".$post_password)),
     			"email"=>$post_email,
     			"last_ip"=>$ip,
     			"expansion"=>$expansion
     			
     	);
-    	//print_r($args);
+    	print(SHA1(strtoupper("'$post_accountname'".":"."'$post_password'")));
     	//print($db->add("account", $args));
     	if($db->add("account", $args)){
             $errors[] = '恭喜!您成功创建了账户: <font color="yellow">'.$post_accountname.'</font>';
