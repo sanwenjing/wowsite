@@ -55,7 +55,6 @@ if(!empty($_POST["accountname"]) && !empty($_POST["password"]) && !empty($_POST[
     			"expansion"=>$expansion
     			
     	);
-    	print(SHA1(strtoupper("'$post_accountname'".":"."'$post_password'")));
     	//print($db->add("account", $args));
     	if($db->add("account", $args)){
             $errors[] = '恭喜!您成功创建了账户: <font color="yellow">'.$post_accountname.'</font>';
