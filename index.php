@@ -51,7 +51,8 @@ if(!empty($_POST["accountname"]) && !empty($_POST["password"]) && !empty($_POST[
     			//SHA1(CONCAT(UPPER('$post_accountname'),':',UPPER('$post_password')))
     			"sha_pass_hash"=>SHA1(strtoupper($post_accountname.":".$post_password)),
     			"email"=>$post_email,
-    			"last_ip"=>$ip,
+			"last_ip"=>$ip,
+			"gmlevel"=>$gmlevel,     //如果没有这个字段就注释掉
     			"expansion"=>$expansion
     			
     	);
