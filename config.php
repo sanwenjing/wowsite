@@ -2,7 +2,7 @@
 
 $mysql = array(
 
-	"host" => "192.168.33.2",
+	"host" => "192.168.35.2",
 	"username" => "sanwenjing",
 	"password" => "123456",
 	"realmd" => "realmd-tbc",
@@ -14,7 +14,7 @@ $mysql = array(
 
 $site = array(
 
-	"title" => "wow燃烧的远征账号注册页",
+	"title" => "WOW2.4.3燃烧的远征账号注册页",
 	"meta_description" => "此页面用来注册一个账号。",
 	"meta_keywords" => "MangosCore, TrinityCore, Registration",
 	"meta_robots" => "INDEX,NOFOLLOW",

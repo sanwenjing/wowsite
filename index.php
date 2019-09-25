@@ -183,7 +183,7 @@ function error_msg(){
             
             </form>
             
-            <div class="copy"><a href="download.php"><font color="yellow">登陆器下载>>></font></a></div>
+            <div class="copy">注:注册账号和下载完登陆器以后,把文件放到wow.exe同一目录,双击启动游戏即可&nbsp;&nbsp;<a href="download.php"><font color="yellow">登陆器下载>>></font></a></div>
 			<div class="copy"><a href="pass.php"><font color="yellow">修改密码</font></a></div>
         </td>
     </tr>
